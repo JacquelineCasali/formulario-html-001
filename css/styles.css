@@ -37,6 +37,8 @@ section#container-login h2{
     }
     .container-input{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     #container-login form input {
         width: 100%;
@@ -53,6 +55,7 @@ section#container-login h2{
     a{
         color:#ffff;
         text-decoration: none;
+        text-align: center;
     }
 
 a:hover{
@@ -94,18 +97,22 @@ a:hover{
     margin:10px 0
 
 }
-.container-radio{
+.container-radio, 
+.container-checkbox{
 display: flex;
 
 }
 
-
-#container-signup .container-radio label{
+#container-signup .container-radio label,
+#container-signup .container-checkbox label
+{
     padding: 0 10px;
     margin-bottom: 10px;
 }
 
-#container-signup .container-radio input[type="radio"] {
+#container-signup .container-radio input[type="radio"],
+#container-signup .container-checkbox input[type="checkbox"] {
+
     width: 20px;
     height: 20px;
     cursor: pointer;
